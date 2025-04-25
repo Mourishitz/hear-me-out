@@ -100,6 +100,20 @@ class SpotifyServiceProvider implements SongProviderInterface
         )['tracks'];
     }
 
+    public static function getAlbumsByArtistId(string $id): array
+    {
+        /**
+         * @var \App\Providers\Integrators\Apis\Spotify $spotify
+         */
+        $spotify = App::get('Spotify');
+
+        return $spotify->getRelationForId(
+            entityId: $id,
+            entityModule: SpotifyModulesEnum::ARTISTS,
+            relationModule: SpotifyModulesEnum::ALBUMS
+        )['items'];
+    }
+
     public static function getAlbumById(string $id): array
     {
         /**

@@ -13,6 +13,7 @@ class ArtistRoutes implements RouterInterface
             $router->get('/', [ArtistController::class, 'index']);
             $router->get('/{id}', [ArtistController::class, 'getbyId']);
             $router->get('/{id}/tracks', [ArtistController::class, 'getTracksByArtistId']);
+            $router->get('/{id}/albums', [ArtistController::class, 'getAlbumsByArtistId']);
         });
     }
 }
