@@ -9,7 +9,21 @@ use Illuminate\Support\Facades\App;
 
 class SpotifyServiceProvider implements SongProviderInterface
 {
-    public static function getSongById(string $id): array
+    public static function getTracks(string $query = '', int $limit = 10): array
+    {
+        /**
+         * @var \App\Providers\Integrators\Apis\Spotify $spotify
+         */
+        $spotify = App::get('Spotify');
+
+        return $spotify->indexType(
+            type: SpotifyModelTypeEnum::TRACK,
+            limit: $limit,
+            query: $query
+        );
+    }
+
+    public static function getTrackById(string $id): array
     {
         /**
          * @var \App\Providers\Integrators\Apis\Spotify $spotify
@@ -19,7 +33,7 @@ class SpotifyServiceProvider implements SongProviderInterface
         return $spotify->findById(id: $id, module: SpotifyModulesEnum::TRACKS);
     }
 
-    public static function getSongByName(string $name): array
+    public static function getTrackByName(string $name): array
     {
         /**
          * @var \App\Providers\Integrators\Apis\Spotify $spotify

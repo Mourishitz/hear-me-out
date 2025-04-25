@@ -4,9 +4,9 @@ namespace App\Providers\Interfaces;
 
 interface SongProviderInterface
 {
-    public static function getSongById(string $id): array;
+    public static function getTrackById(string $id): array;
 
-    public static function getSongByName(string $name): array;
+    public static function getTrackByName(string $name): array;
 
     public static function getArtistById(string $id): array;
 
