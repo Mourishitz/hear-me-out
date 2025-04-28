@@ -1,9 +1,9 @@
 _id: req_269b540f16944416b7914f22325fff17
 type: Request
 parentId: fld_c0a805ad89e44cefbca8266216688482
-modified: 1745603471431
+modified: 1745867002733
 created: 1745515892508
-url: localhost/api/albums/{{ _.album_id }}
+url: "{{ _.host }}/api/albums/{{ _.album_id }}"
 name: Album by ID
 description: ""
 method: GET
@@ -25,7 +25,7 @@ authentication:
   type: bearer
   token: "{{ _.token }}"
   disabled: true
-metaSortKey: -1745603469409
+metaSortKey: -1745603469484
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

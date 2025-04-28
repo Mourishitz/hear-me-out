@@ -1,9 +1,9 @@
 _id: req_fb4cdc7bd0894a1d82188c848972d5b0
 type: Request
 parentId: wrk_8a7c05959d0a4facbb0b5f731a737424
-modified: 1745614924311
+modified: 1745866797753
 created: 1745325986468
-url: http://localhost/api/login
+url: "{{ _.host }}/api/login"
 name: Login
 description: ""
 method: POST

@@ -1,9 +1,9 @@
 _id: req_c2e0a1d36dae4648b71ac831e9acebf8
 type: Request
 parentId: fld_2b9b515d41574403b216577d1bc00ef0
-modified: 1745603411029
+modified: 1745866891958
 created: 1745521862916
-url: localhost/api/users/{{ _.user_id }}/unfollow
+url: "{{ _.host }}/api/users/{{ _.user_id }}/unfollow"
 name: Unfollow
 description: ""
 method: DELETE

@@ -1,9 +1,9 @@
 _id: req_28711caad64a42bab0a09ee9c4bb1189
 type: Request
 parentId: fld_2b9b515d41574403b216577d1bc00ef0
-modified: 1745603409121
+modified: 1745866888902
 created: 1745520788258
-url: localhost/api/users/{{ _.user_id }}/follow
+url: "{{ _.host }}/api/users/{{ _.user_id }}/follow"
 name: Follow
 description: ""
 method: POST

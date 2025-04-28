@@ -1,9 +1,9 @@
 _id: req_ba54ac3ab54f424abb673ed320e6ad9e
 type: Request
 parentId: fld_db2a7774e21a44c595ddedff12a8b1b5
-modified: 1745604895853
+modified: 1745866903965
 created: 1745330012582
-url: localhost/api/artists
+url: "{{ _.host }}/api/artists"
 name: Artists
 description: ""
 method: GET
@@ -11,7 +11,7 @@ body: {}
 parameters:
   - id: pair_a087b1db2b2045fba683c3150dbdc678
     name: query
-    value: red hot chilli peppers
+    value: Evanescence
     description: ""
   - id: pair_108bf208ad2841eb9411cd9a227ea4fe
     name: limit

@@ -1,9 +1,9 @@
 _id: req_3fd8b2c9770145b3b54fa540847321fb
 type: Request
 parentId: fld_2b9b515d41574403b216577d1bc00ef0
-modified: 1745603400420
+modified: 1745866881416
 created: 1745520049623
-url: localhost/api/users/following
+url: "{{ _.host }}/api/users/following"
 name: Followed By User
 description: ""
 method: GET

@@ -1,9 +1,9 @@
 _id: req_0446572509e44a1a81dc2d30786e6d65
 type: Request
 parentId: fld_dc44eaff5341461893788719388cc76f
-modified: 1745604091610
+modified: 1745867014012
 created: 1745603711889
-url: localhost/api/tracks
+url: "{{ _.host }}/api/tracks"
 name: Tracks
 description: ""
 method: GET

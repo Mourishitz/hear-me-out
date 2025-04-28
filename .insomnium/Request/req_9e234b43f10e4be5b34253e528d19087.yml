@@ -1,9 +1,9 @@
 _id: req_9e234b43f10e4be5b34253e528d19087
 type: Request
 parentId: fld_c0a805ad89e44cefbca8266216688482
-modified: 1745603469543
+modified: 1745866973658
 created: 1745515448246
-url: localhost/api/albums
+url: "{{ _.host }}/api/albums"
 name: Albums
 description: ""
 method: GET

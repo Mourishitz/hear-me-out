@@ -1,9 +1,9 @@
 _id: req_af7751ee72dd45cc88cc29219cfb0788
 type: Request
 parentId: fld_9dbf627286964f788d835960db04c026
-modified: 1745614660184
+modified: 1745867026915
 created: 1745614605055
-url: localhost/api/ratings/23
+url: "{{ _.host }}/api/ratings/23"
 name: Rating by ID
 description: ""
 method: GET

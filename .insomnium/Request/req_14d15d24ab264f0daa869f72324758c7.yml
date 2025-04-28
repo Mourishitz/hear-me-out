@@ -1,9 +1,9 @@
 _id: req_14d15d24ab264f0daa869f72324758c7
 type: Request
 parentId: fld_2b9b515d41574403b216577d1bc00ef0
-modified: 1745603398246
+modified: 1745866848856
 created: 1745519252862
-url: localhost/api/users/2
+url: "{{ _.host }}/api/users/2"
 name: User by ID
 description: ""
 method: GET

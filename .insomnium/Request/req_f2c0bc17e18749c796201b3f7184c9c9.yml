@@ -1,9 +1,9 @@
 _id: req_f2c0bc17e18749c796201b3f7184c9c9
 type: Request
 parentId: fld_c0a805ad89e44cefbca8266216688482
-modified: 1745603473080
+modified: 1745867007734
 created: 1745516520760
-url: localhost/api/albums/{{ _.album_id }}/tracks
+url: "{{ _.host }}/api/albums/{{ _.album_id }}/tracks"
 name: Tracks for Album
 description: ""
 method: GET

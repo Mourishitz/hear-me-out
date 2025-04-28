@@ -1,9 +1,9 @@
 _id: req_1d443df621fd410688e3a75d681f3a9a
 type: Request
 parentId: fld_dc44eaff5341461893788719388cc76f
-modified: 1745604350651
+modified: 1745867022289
 created: 1745603711892
-url: localhost/api/tracks/6MXXY2eiWkpDCezVCc0cMH
+url: "{{ _.host }}/api/tracks/{{ _.artist_id }}"
 name: Artist by ID
 description: ""
 method: GET

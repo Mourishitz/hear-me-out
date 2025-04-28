@@ -1,9 +1,9 @@
 _id: req_b898f949964a4cc1bea8330339b48660
 type: Request
 parentId: fld_2b9b515d41574403b216577d1bc00ef0
-modified: 1745603412548
+modified: 1745866895496
 created: 1745519897299
-url: localhost/api/users/{{ _.user_id }}/setSpotify
+url: "{{ _.host }}/api/users/{{ _.user_id }}/setSpotify"
 name: Sync Spotify
 description: ""
 method: POST

@@ -1,9 +1,9 @@
 _id: req_b97e2f0827924d70b34b491be08bdfe0
 type: Request
 parentId: wrk_8a7c05959d0a4facbb0b5f731a737424
-modified: 1745329165600
+modified: 1745867032232
 created: 1745329116224
-url: http://localhost/api/register
+url: "{{ _.host }}/api/register"
 name: Register
 description: ""
 method: POST

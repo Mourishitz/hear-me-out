@@ -1,9 +1,9 @@
 _id: req_44470e39dada41fea700d8e110c4d09e
 type: Request
 parentId: fld_c0a805ad89e44cefbca8266216688482
-modified: 1745613818095
+modified: 1745866981607
 created: 1745612165982
-url: http://localhost/api/albums/{{ _.album_id }}/rating
+url: "{{ _.host }}/api/albums/{{ _.album_id }}/rating"
 name: Rate
 description: ""
 method: POST
@@ -30,7 +30,7 @@ headers:
 authentication:
   type: bearer
   token: "{{ _.token }}"
-metaSortKey: -1745612165982
+metaSortKey: -1745603469309
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true
