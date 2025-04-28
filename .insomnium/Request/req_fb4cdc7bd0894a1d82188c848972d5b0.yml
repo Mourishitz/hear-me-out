@@ -1,0 +1,32 @@
+_id: req_fb4cdc7bd0894a1d82188c848972d5b0
+type: Request
+parentId: wrk_8a7c05959d0a4facbb0b5f731a737424
+modified: 1745866797753
+created: 1745325986468
+url: "{{ _.host }}/api/login"
+name: Login
+description: ""
+method: POST
+body: {}
+parameters:
+  - id: pair_95f7969b09ac432a987c442ca4156abc
+    name: email
+    value: gabriel@email.com
+    description: ""
+  - id: pair_1f74dc2ff9c047bb91bd029c521baaaf
+    name: password
+    value: "12345678"
+    description: ""
+headers:
+  - name: User-Agent
+    value: insomnium/0.2.3-a
+authentication: {}
+metaSortKey: -1745325986468
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
+segmentParams: []

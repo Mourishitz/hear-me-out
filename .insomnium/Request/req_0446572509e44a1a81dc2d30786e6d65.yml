@@ -1,0 +1,41 @@
+_id: req_0446572509e44a1a81dc2d30786e6d65
+type: Request
+parentId: fld_dc44eaff5341461893788719388cc76f
+modified: 1745867014012
+created: 1745603711889
+url: "{{ _.host }}/api/tracks"
+name: Tracks
+description: ""
+method: GET
+body: {}
+parameters:
+  - id: pair_a087b1db2b2045fba683c3150dbdc678
+    name: query
+    value: Good Morning
+    description: ""
+    disabled: false
+  - id: pair_108bf208ad2841eb9411cd9a227ea4fe
+    name: limit
+    value: "10"
+    description: ""
+headers:
+  - name: User-Agent
+    value: insomnium/0.2.3-a
+    id: pair_a1d0b2942f0e43e7b3440aa99edf55f4
+  - id: pair_7f8820a12ca945ff848c4d4e1271e4e6
+    name: accept
+    value: application/json
+    description: ""
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+  disabled: true
+metaSortKey: -1745603451645
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
+segmentParams: []

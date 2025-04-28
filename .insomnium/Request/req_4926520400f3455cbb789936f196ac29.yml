@@ -1,0 +1,26 @@
+_id: req_4926520400f3455cbb789936f196ac29
+type: Request
+parentId: fld_2b9b515d41574403b216577d1bc00ef0
+modified: 1745603387618
+created: 1745519402170
+url: localhost/api/users
+name: Users
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: User-Agent
+    value: insomnium/0.2.3-a
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+metaSortKey: -1745603385525
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
+segmentParams: []

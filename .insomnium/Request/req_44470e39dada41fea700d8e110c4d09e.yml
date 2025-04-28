@@ -1,0 +1,41 @@
+_id: req_44470e39dada41fea700d8e110c4d09e
+type: Request
+parentId: fld_c0a805ad89e44cefbca8266216688482
+modified: 1745866981607
+created: 1745612165982
+url: "{{ _.host }}/api/albums/{{ _.album_id }}/rating"
+name: Rate
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"value": 10,
+    	"criteria": "LYRICS",
+    	"notes": "K. Is just a legend."
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_c79a5c84fc1e4e4cadaf3429f5439c50
+  - name: User-Agent
+    value: insomnium/0.2.3-a
+    id: pair_cff11ffaa5714a33b6ea374da21d2d5c
+  - id: pair_858bfe6164214df68460e607d98ef89f
+    name: accept
+    value: application/json
+    description: ""
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+metaSortKey: -1745603469309
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
+segmentParams: []

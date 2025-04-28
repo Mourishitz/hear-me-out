@@ -1,0 +1,40 @@
+_id: req_9e234b43f10e4be5b34253e528d19087
+type: Request
+parentId: fld_c0a805ad89e44cefbca8266216688482
+modified: 1745866973658
+created: 1745515448246
+url: "{{ _.host }}/api/albums"
+name: Albums
+description: ""
+method: GET
+body: {}
+parameters:
+  - id: pair_a087b1db2b2045fba683c3150dbdc678
+    name: query
+    value: mr morale
+    description: ""
+  - id: pair_108bf208ad2841eb9411cd9a227ea4fe
+    name: limit
+    value: "2"
+    description: ""
+headers:
+  - name: User-Agent
+    value: insomnium/0.2.3-a
+    id: pair_a1d0b2942f0e43e7b3440aa99edf55f4
+  - id: pair_7f8820a12ca945ff848c4d4e1271e4e6
+    name: accept
+    value: application/json
+    description: ""
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+  disabled: true
+metaSortKey: -1745603469509
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
+segmentParams: []

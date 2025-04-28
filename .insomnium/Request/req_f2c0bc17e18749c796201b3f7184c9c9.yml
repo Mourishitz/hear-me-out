@@ -1,0 +1,36 @@
+_id: req_f2c0bc17e18749c796201b3f7184c9c9
+type: Request
+parentId: fld_c0a805ad89e44cefbca8266216688482
+modified: 1745867007734
+created: 1745516520760
+url: "{{ _.host }}/api/albums/{{ _.album_id }}/tracks"
+name: Tracks for Album
+description: ""
+method: GET
+body: {}
+parameters:
+  - id: pair_a6e3e9be95224a8c9a6470a1d1d1d460
+    name: ""
+    value: ""
+    description: ""
+headers:
+  - name: User-Agent
+    value: insomnium/0.2.3-a
+    id: pair_a1d0b2942f0e43e7b3440aa99edf55f4
+  - id: pair_7f8820a12ca945ff848c4d4e1271e4e6
+    name: accept
+    value: application/json
+    description: ""
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+  disabled: true
+metaSortKey: -1745603469459
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
+segmentParams: []

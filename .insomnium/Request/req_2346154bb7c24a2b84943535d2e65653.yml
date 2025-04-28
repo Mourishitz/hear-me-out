@@ -1,0 +1,32 @@
+_id: req_2346154bb7c24a2b84943535d2e65653
+type: Request
+parentId: fld_db2a7774e21a44c595ddedff12a8b1b5
+modified: 1745866964472
+created: 1745604741187
+url: "{{ _.host }}/api/artists/{{ _.artist_id }}/albums"
+name: Artist Albums
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: User-Agent
+    value: insomnium/0.2.3-a
+    id: pair_a1d0b2942f0e43e7b3440aa99edf55f4
+  - id: pair_7f8820a12ca945ff848c4d4e1271e4e6
+    name: accept
+    value: application/json
+    description: ""
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+  disabled: true
+metaSortKey: -1745603418535
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
+segmentParams: []

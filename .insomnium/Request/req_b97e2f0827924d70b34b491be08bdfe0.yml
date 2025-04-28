@@ -1,0 +1,33 @@
+_id: req_b97e2f0827924d70b34b491be08bdfe0
+type: Request
+parentId: wrk_8a7c05959d0a4facbb0b5f731a737424
+modified: 1745867032232
+created: 1745329116224
+url: "{{ _.host }}/api/register"
+name: Register
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"name": "Gabriel",
+    	"email": "gabriel@email.com",
+    	"password": "12345678"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: insomnium/0.2.3-a
+authentication: {}
+metaSortKey: -1744814899182
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
+segmentParams: []

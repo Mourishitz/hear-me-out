@@ -1,0 +1,26 @@
+_id: req_dd0a16045bbd4570ae2694d10e8aa0ae
+type: Request
+parentId: fld_2b9b515d41574403b216577d1bc00ef0
+modified: 1745866885165
+created: 1745521781235
+url: "{{ _.host }}/api/users/followers"
+name: User Followers
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: User-Agent
+    value: insomnium/0.2.3-a
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+metaSortKey: -1745603385225
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
+segmentParams: []
