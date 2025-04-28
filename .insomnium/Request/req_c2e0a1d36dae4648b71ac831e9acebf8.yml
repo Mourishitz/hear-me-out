@@ -1,0 +1,32 @@
+_id: req_c2e0a1d36dae4648b71ac831e9acebf8
+type: Request
+parentId: fld_2b9b515d41574403b216577d1bc00ef0
+modified: 1745603411029
+created: 1745521862916
+url: localhost/api/users/{{ _.user_id }}/unfollow
+name: Unfollow
+description: ""
+method: DELETE
+body: {}
+parameters: []
+headers:
+  - name: User-Agent
+    value: insomnium/0.2.3-a
+    id: pair_0eb6e02cc1be4587ae804187a0f0b349
+  - id: pair_9dd79a77529c4df99639f9b2cbd6916f
+    name: accept
+    value: application/json
+    description: ""
+    disabled: false
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+metaSortKey: -1745603385025
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
+segmentParams: []

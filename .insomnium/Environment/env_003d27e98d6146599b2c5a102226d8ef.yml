@@ -1,0 +1,29 @@
+_id: env_003d27e98d6146599b2c5a102226d8ef
+type: Environment
+parentId: wrk_8a7c05959d0a4facbb0b5f731a737424
+modified: 1745520029972
+created: 1745325984516
+name: Base Environment
+data:
+  host: http://localhost
+  logged_user_id: "{% response 'body', 'req_2a0a7d07690a40bc89728e55e565901b',
+    'b64::JC51c2VyLmlk::46b', 'never', 60 %}"
+  user_id: "{% response 'body', 'req_6a1de9eb1c98430483b506ebf03da3dd',
+    'b64::JC5kYXRhLmlk::46b', 'never', 60 %}"
+  artist_id: "{% response 'body', 'req_9a20a54d3fa941318b0dc63e1a45fec5',
+    'b64::JC5kYXRhWzBdLmlk::46b', 'never', 60 %}"
+  album_id: "{% response 'body', 'req_05bfd61aa9e94f199d082381b8ee800d',
+    'b64::JC5kYXRhWzBdLmlk::46b', 'never', 60 %}"
+  token: "{% response 'body', 'req_b01e8430dcf643969f6ed0f47ce8481f',
+    'b64::JC50b2tlbg==::46b', 'never', 60 %}"
+dataPropertyOrder:
+  "&":
+    - host
+    - logged_user_id
+    - user_id
+    - artist_id
+    - album_id
+    - token
+color: null
+isPrivate: false
+metaSortKey: 1745325984516

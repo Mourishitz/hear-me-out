@@ -1,0 +1,32 @@
+_id: req_af7751ee72dd45cc88cc29219cfb0788
+type: Request
+parentId: fld_9dbf627286964f788d835960db04c026
+modified: 1745614660184
+created: 1745614605055
+url: localhost/api/ratings/23
+name: Rating by ID
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: User-Agent
+    value: insomnium/0.2.3-a
+    id: pair_a1d0b2942f0e43e7b3440aa99edf55f4
+  - id: pair_7f8820a12ca945ff848c4d4e1271e4e6
+    name: accept
+    value: application/json
+    description: ""
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+  disabled: true
+metaSortKey: -1745603451545
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
+segmentParams: []

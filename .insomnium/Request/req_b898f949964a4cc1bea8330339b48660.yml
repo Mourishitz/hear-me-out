@@ -1,0 +1,26 @@
+_id: req_b898f949964a4cc1bea8330339b48660
+type: Request
+parentId: fld_2b9b515d41574403b216577d1bc00ef0
+modified: 1745603412548
+created: 1745519897299
+url: localhost/api/users/{{ _.user_id }}/setSpotify
+name: Sync Spotify
+description: ""
+method: POST
+body: {}
+parameters: []
+headers:
+  - name: User-Agent
+    value: insomnium/0.2.3-a
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+metaSortKey: -1745603384925
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
+segmentParams: []

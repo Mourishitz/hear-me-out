@@ -1,0 +1,26 @@
+_id: req_3fd8b2c9770145b3b54fa540847321fb
+type: Request
+parentId: fld_2b9b515d41574403b216577d1bc00ef0
+modified: 1745603400420
+created: 1745520049623
+url: localhost/api/users/following
+name: Followed By User
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: User-Agent
+    value: insomnium/0.2.3-a
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+metaSortKey: -1745603385325
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
+segmentParams: []

@@ -1,0 +1,10 @@
+_id: fld_db2a7774e21a44c595ddedff12a8b1b5
+type: RequestGroup
+parentId: wrk_8a7c05959d0a4facbb0b5f731a737424
+modified: 1745603449974
+created: 1745603425144
+name: Artist
+description: ""
+environment: {}
+environmentPropertyOrder: null
+metaSortKey: -1745603404262.5
