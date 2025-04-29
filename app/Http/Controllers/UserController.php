@@ -6,6 +6,7 @@ use App\Http\Resources\UserResource;
 use App\Models\User;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Tymon\JWTAuth\Facades\JWTAuth;
@@ -35,7 +36,7 @@ class UserController extends Controller
         return response()->json(compact('user', 'token'), 201);
     }
 
-    public function index(): UserResource
+    public function index(): AnonymousResourceCollection
     {
         return UserResource::collection(User::query()->paginate());
     }
