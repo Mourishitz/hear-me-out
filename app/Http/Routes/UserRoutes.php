@@ -19,7 +19,7 @@ class UserRoutes implements RouterInterface
             $router->get('/following', [UserController::class, 'getFollowing']);
 
             $router->get('/{id}', [UserController::class, 'show']);
-            $router->post('/{id}/setSpotify', [UserController::class, 'setSpotify']);
+            $router->post('/sync-spotify', [UserController::class, 'syncSpotify']);
             $router->post('/{id}/follow', [UserController::class, 'follow']);
             $router->delete('/{id}/unfollow', [UserController::class, 'unfollow']);
         })->middleware([JwtMiddleware::class]);

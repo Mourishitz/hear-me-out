@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\SyncSpotifyRequest;
 use App\Http\Resources\UserResource;
 use App\Models\User;
 use Illuminate\Http\JsonResponse;
@@ -112,8 +113,15 @@ class UserController extends Controller
         return response()->json(['message' => 'Successfully unfollowed user'], 200);
     }
 
-    public function setSpotify(Request $request, int $id): JsonResponse
+    public function syncSpotify(SyncSpotifyRequest $request): UserResource
     {
-        return response()->json(['message' => 'Not implemented'], 501);
+        $user = JWTAuth::parseToken()->authenticate();
+
+        $user->spotify_id = $request->get('spotify_id');
+        $user->spotify_token = $request->get('spotify_refresh_token');
+        $user->save();
+
+        return new UserResource($user);
+
     }
 }

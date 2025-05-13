@@ -8,6 +8,7 @@ use App\Providers\BaseApi;
 use Illuminate\Http\Client\Response;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Str;
+use Tymon\JWTAuth\Facades\JWTAuth;
 
 class Spotify extends BaseApi
 {
@@ -40,13 +41,25 @@ class Spotify extends BaseApi
         $this->apiKey = $data['access_token'];
     }
 
-    /**
-     * @param  array<int,mixed>  $params
-     * @param  array<int,mixed>  $headers
-     */
-    private function spotifyRequest(string $endpoint, string $method, array $params, array $headers): array
+    private function refreshUserToken(): void
     {
-        /** @var Response $response */
+        /** @var \App\Models\User $user */
+        $user = JWTAuth::parseToken()->authenticate();
+
+        $token = $this->post(
+            endpoint: 'https://accounts.spotify.com/api/token',
+            params: [
+                'grant_type' => 'refresh_token',
+                'refresh_token' => $user->spotify_refresh_token,
+            ],
+            headers: [
+                'Authorization' => 'Basic '.base64_encode(env('SPOTIFY_CLIENT_ID').':'.env('SPOTIFY_CLIENT_SECRET')),
+            ]
+        );
+    }
+
+    private function request(string $endpoint, string $method, array $params, array $headers, callable $unauthorizedCallback)
+    {
         $response = $this->$method(
             endpoint: $endpoint,
             params: $params,
@@ -54,7 +67,7 @@ class Spotify extends BaseApi
         );
 
         if ($response->unauthorized()) {
-            $this->refreshApiKey();
+            $unauthorizedCallback();
             unset($response);
             $response = $this->$method(
                 endpoint: $endpoint,
@@ -68,6 +81,25 @@ class Spotify extends BaseApi
         }
 
         return $response->json();
+    }
+
+    private function spotifyUserRequest(string $endpoint, string $method, array $params, array $headers): array {}
+
+    /**
+     * @param  array<int,mixed>  $params
+     * @param  array<int,mixed>  $headers
+     */
+    private function spotifyRequest(string $endpoint, string $method, array $params, array $headers): array
+    {
+        return $this->request(
+            endpoint: $endpoint,
+            method: $method,
+            params: $params,
+            headers: $headers,
+            unauthorizedCallback: function () {
+                $this->refreshApiKey();
+            }
+        );
     }
 
     private function search(string $query, SpotifyModelTypeEnum $type, int $limit = 10): array
